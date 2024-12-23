@@ -4,7 +4,7 @@
             "id": 0,
             "date": "August 2023 - June 2024",
             "title": "Financial Services Company",
-            "summary": "Constructed a proof of concept cross-platform finance management application that can be deployed to Android, iOS, and web from a single code base using React Native, Redux, and Tailwind.  It was a complete UI redesign meant to utilize a new design kit that could be consistently applied to the user experience while consuming existing APIs.",
+            "summary": "Constructed a proof of concept cross-platform finance management application that can be deployed to Android, iOS, and web from a single code base using React Native, Typescript, Redux, and Tailwind.  It was a complete UI redesign meant to utilize a new design kit that could be consistently applied to the user experience while consuming existing APIs.",
             "contribution": "Contribution: - Developed ADA compliant UI components with unit tests in Storybook using designs in Figma - Worked in a UI team of 5 members, took individual responsibility for implementing several components and screens, including forms using Formik and Yup for validation - Challenged discrepancies between API data availability and business requirements, identifying gaps in the UX in advance of client presentations - Verified complex requirements with design, business, backend, and QA teams, requested updates when needed",
             "stack": ["rn", "sass"]
         },
@@ -21,7 +21,7 @@
             "date": "April 2021 - December 2021",
             "title": "New-York Historical Society, WAMS",
             "summary": "This was my second engagement as the sole developer with the WAMS team after having implemented the redesign of their curriculum pages, which is the bulk of their site. This round of updates included adding curriculum templates in Wordpress for the client to add content to. Our team also designed and developed a responsive timeline of historical events, as well as a user walkthrough of the homepage for first-time users.",
-            "contribution": "Contribution: - Manually added large amounts of content for the client - Worked closely with UX and design to develop impactful but feasible solutions that the client could easily manage after handing off the site - Added a mini React implementation inside of a Wordpress template for the event timeline. - Wrote the user walkthrough in vanilla JS to control modals and manipulate existing Wordpress modules- Cleaned up SASS files to better manage color variables for design library",
+            "contribution": "Contribution: - Manually added large amounts of content for the client - Worked closely with UX and design to develop impactful but feasible solutions that the client could easily manage after handing off the site - Added a mini React implementation inside of a Wordpress template for the event timeline. - Wrote the user walkthrough in vanilla JS to control modals and manipulate existing Wordpress modules - Cleaned up SASS files to better manage color variables for the design library",
             "stack": ["wordpress", "html", "sass"],
             "url": "https://wams.nyhistory.org/"
         },
@@ -29,7 +29,7 @@
             "id": 3,
             "date": "June 2020 - August 2020",
             "title": "New York State, Excelsior Pass",
-            "summary": "Part of a small team that developed a web application for New York State that verified Covid vaccination credentials based on New York state's data received from health providers statewide and allowed the user to present an encrypted QR code.",
+            "summary": "I was part of a small team that developed a web application for New York State that verified Covid vaccination credentials based on New York state's data received from health providers statewide and allowed the user to present an encrypted QR code stored in their digital wallet.",
             "contribution": "Contribution: - Wrote and reviewed Angular code for front end design updates - Added logic to backend services in Express to accommodate 3+ vaccine credentials for a user while handling several cases for bad or non normalized data - Used IBM Cloud to deploy application across environments",
             "stack": ["angular", "node", "html", "sass"]
         },
@@ -46,7 +46,7 @@
             "id": 5,
             "date": "April 2017 - June 2018",
             "title": "Chase, Retail Structured Products",
-            "summary": "Our team worked directly with the client developers to build a new, internal application for bankers to calculate values during client conversations.",
+            "summary": "Our team worked directly with the client developers to build a new, internal application for bankers to calculate values for retail structured products during client conversations.",
             "contribution": "Contribution: - Helped to define team best practices, procedures, and style guides that were adopted by the client. - Increased UI unit test coverage from 0 to 85%.  - Implemented ADA compliant code. Communicated extensively with the client's ADA team to reach satisfactory solutions - Collaborated with BAs, visual designers, and UX teams to arrive at user friendly solutions. - Led the UI team by talking through code problems and code review. - Implemented Browserify as a solution to adding bundling and ES6 transpiling to the UI code base",
             "stack": ["angular", "sass"]
         },
@@ -62,8 +62,8 @@
             "id": 7,
             "date": "May 2013 - December 2014",
             "title": "My Coke Rewards",
-            "summary": "Our team was tasked with new development for the front and backend of My Coke Reward's website, including their sub brands.  We had two primary tasks which were to create and monitor seasonal campaigns, and also to create responsive, reusable components that could be applied across the brands in Adobe CQ.",
-            "contribution": "Contribution: - UI Development using jQuery for My Coke Reward campaign pages which were based around social media content on Instagram and Twitter - Created responsive components using vanilla css and helped with integration in their Adobe CQ platform - Joined defect triage meetings and fixed issues",
+            "summary": "Our team was tasked with new development for the front and backend of My Coke Reward's website, including their sub brands.  We had two primary tasks which were to create and monitor seasonal campaigns, and also to create responsive, reusable components that could be applied across the brands in Adobe CQ (now known as AEM).",
+            "contribution": "Contribution: - UI Development using jQuery for three My Coke Reward campaign pages which were based around social media content on Instagram and Twitter - Created responsive components using vanilla css and helped with integration in their Adobe CQ platform - Joined defect triage meetings and fixed issues",
             "stack": ["js", "css"]
         }
     ]
