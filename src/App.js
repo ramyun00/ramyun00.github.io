@@ -1,9 +1,9 @@
-import {useEffect, useState, useRef} from 'react';
-import data from './data/portfolio.json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngular, faCss, faDrupal, faJs, faNodeJs, faReact, faSass, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faAngular, faJs, faReact, faNodeJs, faWordpress, faCss, faSass, faDrupal } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useRef, useState } from 'react';
 import './App.scss';
+import data from './data/portfolio.json';
 
 function App() {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -31,7 +31,7 @@ function App() {
         <p>
           Hello! I'm <strong>Anna</strong>, a seasoned UI Developer with over 10 years of experience at IBM Consulting. 
           My journey into programming began during my master's program, where I delved into PHP, SQL, and Python basics. 
-          However, my passion for UI development truly ignited with my first professional project, <em>My Coke Rewards</em>.
+          However, my passion for UI development truly ignited with my first professional project, My Coke Rewards.
         </p>
         <p>
           Throughout my career, I've honed my ability to adapt quickly to new environments and technologies, thanks to a wide 
@@ -40,10 +40,9 @@ function App() {
         </p>
         <p>
           Beyond work, I enjoy expanding my skill set through personal projects and continuous learning. For example, 
-          I developed a Python script to scrape data from my favorite cooking site and created a Chrome plugin to streamline 
-          website bookmarking and data summarization. I also explored C# and Unity to deploy an app on my Meta Quest and 
-          completed a React Native course at IBM, where I presented a custom application to my team. These experiences reflect 
-          my passion for exploring new technologies and building meaningful tools.
+          I wrote a Python script to scrape data from my favorite cooking site, and then used that data to find recipes by ingredient. I created a Chrome plugin to crawl bookmarked recipe pages so I could search them by ingredient and search by custom tags. I also explored C# and Unity to deploy an app on my Meta Quest and 
+          completed a React Native course at IBM, where I presented a custom Android app to my team. These experiences reflect 
+          my passion for exploring new technologies and building experiences that are useful or fun.
         </p>
         <p>
           To me, life is an ongoing journey of learning and growth. I'm excited about the challenges and opportunities 
@@ -64,7 +63,7 @@ function App() {
               <h3>{project.date}</h3>
               <p>{project.summary}</p>
               <p>{project.contribution.replace(/-/g, "\n-")}</p>
-              {project.url && <a href={project.url} target="_blank">Website</a>}
+              {project.url && <a href={project.url} target="_blank" rel="noreferrer">Website</a>}
               {project.stack && (
                 <div className="portfolio__item-stack">
                 {project.stack.includes('angular') && <FontAwesomeIcon icon={faAngular} size={iconSize} title="Angular" />}

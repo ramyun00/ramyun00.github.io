@@ -11,7 +11,7 @@
         {
             "id": 1,
             "date": "Feb 2022 - April 2022",
-            "title": "Workplace Credentials",
+            "title": "IBM, Workplace Credentials",
             "summary": "Developed a white-label application with an API-only option for companies to verify employee Covid vaccination credentials.",
             "contribution": "Contribution: - Implemented functionality to read an uploaded QR code's data and populate data into a form - Updated copy for i18n and client specific configurations for the UI - Customized Carbon design kit components, collaborated with design team to find reasonable solutions",
             "stack": ["angular", "node", "html", "sass"]
@@ -19,7 +19,7 @@
         {
             "id": 2,
             "date": "April 2021 - December 2021",
-            "title": "New-York Historical Society",
+            "title": "New-York Historical Society, WAMS",
             "summary": "This was my second engagement as the sole developer with the WAMS team after having implemented the redesign of their curriculum pages, which is the bulk of their site. This round of updates included adding curriculum templates in Wordpress for the client to add content to. Our team also designed and developed a responsive timeline of historical events, as well as a user walkthrough of the homepage for first-time users.",
             "contribution": "Contribution: - Manually added large amounts of content for the client - Worked closely with UX and design to develop impactful but feasible solutions that the client could easily manage after handing off the site - Added a mini React implementation inside of a Wordpress template for the event timeline. - Wrote the user walkthrough in vanilla JS to control modals and manipulate existing Wordpress modules- Cleaned up SASS files to better manage color variables for design library",
             "stack": ["wordpress", "html", "sass"],
@@ -28,7 +28,7 @@
         {
             "id": 3,
             "date": "June 2020 - August 2020",
-            "title": "Excelsior Pass",
+            "title": "New York State, Excelsior Pass",
             "summary": "Developed a web application for New York State that verified Covid vaccination credentials based on New York state's data received from health providers statewide and allowed the user to present an encrypted QR code.",
             "contribution": "Contribution: - Wrote and reviewed Angular code for front end design updates - Added logic to backend services in Express to accommodate 3+ vaccine credentials while handling several cases for bad or non normalized data - Used IBM Cloud to deploy application across environments",
             "stack": ["angular", "node", "html", "sass"]
