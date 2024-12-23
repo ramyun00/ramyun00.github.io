@@ -40,9 +40,8 @@ function App() {
         </p>
         <p>
           Beyond work, I enjoy expanding my skill set through personal projects and continuous learning. For example, 
-          I wrote a Python script to scrape data from my favorite cooking site, and then used that data to find recipes by ingredient. I created a Chrome plugin to crawl bookmarked recipe pages so I could search them by ingredient and search by custom tags. I also explored C# and Unity to deploy an app on my Meta Quest and 
-          completed a React Native course at IBM, where I presented a custom Android app to my team. These experiences reflect 
-          my passion for exploring new technologies and building experiences that are useful or fun.
+          I wrote a Python script to scrape data from my favorite cooking site, and then used that data to find recipes by ingredient. I created a Chrome plugin to crawl bookmarked recipe pages so I could search them by ingredient and add custom tags. I also explored C# and Unity to deploy an app on my Meta Quest and 
+          completed a React Native course at IBM, where I presented a custom Android app to my team (this was also food related). These experiences reflect my passion for exploring new technologies and building experiences that are useful or fun.
         </p>
         <p>
           To me, life is an ongoing journey of learning and growth. I'm excited about the challenges and opportunities 
