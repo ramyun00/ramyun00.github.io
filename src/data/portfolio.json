@@ -29,16 +29,16 @@
             "id": 3,
             "date": "June 2020 - August 2020",
             "title": "New York State, Excelsior Pass",
-            "summary": "Developed a web application for New York State that verified Covid vaccination credentials based on New York state's data received from health providers statewide and allowed the user to present an encrypted QR code.",
-            "contribution": "Contribution: - Wrote and reviewed Angular code for front end design updates - Added logic to backend services in Express to accommodate 3+ vaccine credentials while handling several cases for bad or non normalized data - Used IBM Cloud to deploy application across environments",
+            "summary": "Part of a small team that developed a web application for New York State that verified Covid vaccination credentials based on New York state's data received from health providers statewide and allowed the user to present an encrypted QR code.",
+            "contribution": "Contribution: - Wrote and reviewed Angular code for front end design updates - Added logic to backend services in Express to accommodate 3+ vaccine credentials for a user while handling several cases for bad or non normalized data - Used IBM Cloud to deploy application across environments",
             "stack": ["angular", "node", "html", "sass"]
         },
         {
             "id": 4,
             "date": "March 2020 - July 2020",
             "title": "The Aesthetic Society",
-            "summary": "A complete rebuild for the Aesthetic Society's website which included multiple Design Thinking sessions with the client and patients. The sessions led to the complete reimagining of the UX and UI design, including the homepage, image galleries, surgeon search, education pages, and more.",
-            "contribution": "Contribution: - Led offshore UI team, advised on front end decisions - Liaison between design and UI team  - Implemented React components within a Drupal application - Creatively solutioned UI components that were output from Drupal modules",
+            "summary": "A complete rebuild for the Aesthetic Society's website which included multiple Design Thinking sessions with the client and patients. The sessions led to the complete reimagining of the UX and UI design, including the homepage, image galleries, surgeon search, and education pages",
+            "contribution": "Contribution: - Led offshore UI team, advised on front end decisions - Liaisoned between design and UI team  - Implemented React components within a Drupal application - Creatively solutioned UI components that were output from Drupal modules",
             "stack": ["drupal", "react", "sass"],
             "url": "https://www.theaestheticsociety.org/"
         },
