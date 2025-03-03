@@ -114,9 +114,9 @@
             "type": "personal",
             "summary": "I started this app while taking an internal React Native course at IBM.  The primary function is a spinner that randomly selects whether you should cook or order in, and based on that choice, it displays restaurants near you from Google Places or recipes from the Edamame API.  The restaurants or recipes are displayed in a stack that you can swipe through in a Tinder-like interface.  In January 2025, I updated all of the app's dependencies and added Google authentication for web and mobile through Firebase using the react-native-firebase library.  I am currently working on adding a feature to allow users to save their favorite restaurants and recipes.",
             "stack": [
-                "react"
-            ],
-            "url": "https://play.unity.com/en/games/655b9a58-9834-47da-b846-f0fba866384f/webgl-thingy"
+                "rn",
+                "sass"
+            ]
         }
     ]
 }
