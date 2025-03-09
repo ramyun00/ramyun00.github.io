@@ -1,4 +1,4 @@
-# Hi.
+# Hi
 
 I originally made this in a couple days to send as part of a job application.
 I've been updating it over time to improve the look, but I'm clearer no designer 😂
