@@ -7,8 +7,10 @@ import StarrySky from './utilities/makeSky';
 function App() {
   const [isAnimated, setIsAnimated] = useState(false);
   const [isSecondAnimated, setIsSecondAnimated] = useState(false);
+  const [isThirdAnimated, setIsThirdAnimated] = useState(false);
   const triggerPointRef = useRef(null);
   const secondTriggerPointRef = useRef(null);
+  const thirdTriggerPointRef = useRef(null);
   const iconSize = 'xl';
 
   useEffect(() => {
@@ -23,6 +25,13 @@ function App() {
         window.scrollY > secondTriggerPointRef.current.offsetTop - 300
       ) {
         setIsSecondAnimated(true);
+      }
+
+      if (
+        thirdTriggerPointRef.current &&
+        window.scrollY > thirdTriggerPointRef.current.offsetTop - 300
+      ) {
+        setIsThirdAnimated(true);
       }
     };
 
@@ -94,6 +103,31 @@ function App() {
             return <></>;
           }
         })}
+      </div>
+
+      <div className="portfolio__header">
+        <h2 className="portfolio__title">Contact</h2>
+        <div style={{ height: '15px', margin: 0 }} ref={thirdTriggerPointRef}>
+          <div className={`bar ${isThirdAnimated ? 'animated' : ''}`} />
+        </div>
+      </div>
+      <div className="portfolio">
+        <div className="contact">
+          <div>
+            <h2>E-Mail</h2>
+            <a href="mailto:annaboot@gmail.com">annaboot@gmail.com</a>
+          </div>
+          <div>
+            <h2>LinkedIn</h2>
+            <a href="https://www.linkedin.com/in/annaboot/">
+              https://www.linkedin.com/in/annaboot/
+            </a>
+          </div>
+          <div>
+            <h2>Github</h2>
+            <a href="https://github.com/ramyun00">https://github.com/ramyun00</a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    padding: 100px 5% 40px;
+    padding: 100px 5%;
 
     h1 {
       margin: 0;
@@ -53,8 +53,8 @@ body {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       font-size: 4rem;
-      color: black;
-      background-color: $orange;
+      color: $orange;
+      border: 1px solid $orange;
     }
 
     p {
@@ -66,9 +66,9 @@ body {
     position: relative;
     left: 0;
     width: 0;
-    height: 5px;
+    height: 2px;
     background-color: $orange;
-    transition: width .5s ease-in-out; /* Smooth animation */
+    transition: width .5s ease-in-out;
   }
   
   .bar.animated {
@@ -139,6 +139,13 @@ body {
     gap: 10px;
     justify-content: flex-end;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -151,7 +158,10 @@ body {
   .portfolio {
     .portfolio__item:last-child {
       flex: 0 45%;
-    } 
+    }
+
+    .contact {
+      gap: 8rem;
+    }
   }
-  
 }
