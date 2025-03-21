@@ -8,28 +8,39 @@ function App() {
   const [isAnimated, setIsAnimated] = useState(false);
   const [isSecondAnimated, setIsSecondAnimated] = useState(false);
   const [isThirdAnimated, setIsThirdAnimated] = useState(false);
-  const triggerPointRef = useRef(null);
-  const secondTriggerPointRef = useRef(null);
-  const thirdTriggerPointRef = useRef(null);
+  const ibmPointRef = useRef(null);
+  const personalProjectsTriggerRef = useRef(null);
+  const contactTriggerPointRef = useRef(null);
   const iconSize = 'xl';
 
+  const scrollToSection = (ref) => {
+    const target = ref.current;
+
+    if (target) {
+      // Scroll to the section, but stop 100px above it
+      window.scrollTo({
+        top: target.offsetTop - 100,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   useEffect(() => {
-    console.log('ref', triggerPointRef.current);
     const handleScroll = () => {
-      if (triggerPointRef.current && window.scrollY > triggerPointRef.current.offsetTop - 300) {
+      if (ibmPointRef.current && window.scrollY > ibmPointRef.current.offsetTop - 250) {
         setIsAnimated(true);
       }
 
       if (
-        secondTriggerPointRef.current &&
-        window.scrollY > secondTriggerPointRef.current.offsetTop - 300
+        personalProjectsTriggerRef.current &&
+        window.scrollY > personalProjectsTriggerRef.current.offsetTop - 300
       ) {
         setIsSecondAnimated(true);
       }
 
       if (
-        thirdTriggerPointRef.current &&
-        window.scrollY > thirdTriggerPointRef.current.offsetTop - 300
+        contactTriggerPointRef.current &&
+        window.scrollY > contactTriggerPointRef.current.offsetTop - 300
       ) {
         setIsThirdAnimated(true);
       }
@@ -40,16 +51,26 @@ function App() {
       window.removeEventListener('scroll', handleScroll); // Cleanup listener
     };
   }, []);
+
   return (
     <div className="app">
       <StarrySky />
-      <div className="app__title">
-        <h1>Anna Boot</h1>
-        <h2>UI Dev | Adaptable, curious, inventive</h2>
+      <div className="app_header-wrapper">
+        <div className="app__title">
+          <h1>Anna Boot</h1>
+          <h2>UI Dev | Adaptable, curious, inventive</h2>
+        </div>
+        <div className="app__nav">
+          <button onClick={() => scrollToSection(ibmPointRef)}>Select Projects at IBM</button>
+          <button onClick={() => scrollToSection(personalProjectsTriggerRef)}>
+            Personal Projects
+          </button>
+          <button onClick={() => scrollToSection(contactTriggerPointRef)}>Contact</button>
+        </div>
       </div>
       <div className="portfolio__header">
         <h2 className="portfolio__title">Select Projects at IBM</h2>
-        <div style={{ height: '15px', margin: 0 }} ref={triggerPointRef}>
+        <div style={{ height: '15px', margin: 0 }} ref={ibmPointRef}>
           <div className={`bar ${isAnimated ? 'animated' : ''}`} />
         </div>
       </div>
@@ -78,7 +99,7 @@ function App() {
 
       <div className="portfolio__header">
         <h2 className="portfolio__title">Personal Projects</h2>
-        <div style={{ height: '15px', margin: 0 }} ref={secondTriggerPointRef}>
+        <div style={{ height: '15px', margin: 0 }} ref={personalProjectsTriggerRef}>
           <div className={`bar ${isSecondAnimated ? 'animated' : ''}`} />
         </div>
       </div>
@@ -107,7 +128,7 @@ function App() {
 
       <div className="portfolio__header">
         <h2 className="portfolio__title">Contact</h2>
-        <div style={{ height: '15px', margin: 0 }} ref={thirdTriggerPointRef}>
+        <div style={{ height: '15px', margin: 0 }} ref={contactTriggerPointRef}>
           <div className={`bar ${isThirdAnimated ? 'animated' : ''}`} />
         </div>
       </div>

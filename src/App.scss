@@ -1,5 +1,17 @@
 $lightblue: #5EABE6;
-$orange: #E5AF5F;
+$orange: hsl(36, 72%, 64%);
+
+@keyframes spinVertical {
+  0% {
+    transform: rotate(0deg); /* Starting position */
+  }
+  50% {
+    transform: rotateX(180deg); /* After half a spin (flipping vertically) */
+  }
+  100% {
+    transform: rotateX(360deg); /* Ending back at the original position */
+  }
+}
 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -7,88 +19,127 @@ h2 {
 
 body {
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 15rem;
   background-color: #000;
   color: white;
 }
 
-.app {
-  .starry-background {
-    width: 100%;
-    height: 150vh;
-    background: radial-gradient(circle, rgba(10, 15, 40, 0.8) 20%, rgba(0, 0, 0, 0.9) 60%, black 90%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+.starry-background {
+  width: 100%;
+  height: 150vh;
+  background: radial-gradient(circle, rgba(10, 15, 40, 0.8) 20%, rgba(0, 0, 0, 0.9) 60%, black 90%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  .starry-background::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to top, black, transparent)
-  }
+.starry-background::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, black, transparent)
+}
 
-  .star {
-    position: absolute;
-    background-color: rgba(200, 200, 255, 0.8); /* Subtle bluish-white */
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* Soft glow effect */
-  }
+.star {
+  position: absolute;
+  background-color: rgba(200, 200, 255, 0.8); /* Subtle bluish-white */
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
 
-  .app__title {
-    padding-top: 10rem;
-    flex-direction: column;
-    display: flex;
-    align-items: flex-start;
-    padding: 100px 5%;
+.app_header-wrapper {
+  padding-top: 10rem;
+  padding: 100px 5%;
+}
 
-    h1 {
-      margin: 0;
-      padding: 15px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      font-size: 4rem;
-      color: $orange;
-      border: 1px solid $orange;
-    }
-
-    p {
-      margin: 1rem 0 0;
-    }
-  }
-
-  .bar {
-    position: relative;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: $orange;
-    transition: width .5s ease-in-out;
-  }
+.app__title {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
   
-  .bar.animated {
-    width: 50%; /* Animate to the middle of the page */
-  }
 
-  .portfolio__header {
-    flex:  100%;
-    padding: 0 5%;
-  }
-
-  .portfolio__title {
-    display: inline-block;
+  h1 {
+    margin: 0;
+    padding: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    color: $orange;
+    border: 1px solid $orange;
   }
+
+  p {
+    margin: 1rem 0 0;
+  }
+}
+
+.app__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 0 0;
+
+  button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  button:before {
+    display: inline-block;
+    content: '\0025B6 \00a0';
+    color: #fff;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+
+  button:hover {
+    color: $orange;
+  }
+
+  button:hover:before {
+    color: $orange;
+    animation: spinVertical 0.5s ease-in-out;
+  }
+
+}
+
+.bar {
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: $orange;
+  transition: width .5s ease-in-out;
+}
+
+.bar.animated {
+  width: 50%; /* Animate to the middle of the page */
+}
+
+.portfolio__header {
+  flex:  100%;
+  padding: 0 5%;
+}
+
+.portfolio__title {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .portfolio {
@@ -163,5 +214,19 @@ body {
     .contact {
       gap: 8rem;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .app_header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+  }
+
+  .app__nav {
+    padding: 0;
   }
 }
