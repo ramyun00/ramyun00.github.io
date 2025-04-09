@@ -93,6 +93,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     cursor: pointer;
+    text-align: left;
   }
 
   button:before {
@@ -228,5 +229,6 @@ body {
 
   .app__nav {
     padding: 0;
+    text-align: center;
   }
 }
